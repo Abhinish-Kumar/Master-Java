@@ -92,6 +92,9 @@ Here's a visual markdown diagram that explains the flow of Java compilation and 
                                          |  java (JRE: Executor)        |
                                          +----------------------------->|
 
+```
+
+
 Flow Explanation:
 1. **First.java**:
    - The source code written in Java.
@@ -118,12 +121,100 @@ Flow Explanation:
 
 
 
-## Installation 
+## Installation of JDK
+
+https://www.oracle.com/java/technologies/downloads/#java23
+
+x64 Installer - download 
+
+program files > java 
+
+java -version check this in CMD
 
 
+If not working set the path 
+
+Steps to set the path in windows
+
+program files > java > jdk-17 > bin 
+
+copy this path
+
+OnThis PC -> right click > property > advance system settings >environment variable >path (above is for the user and below for teh entire system) > edit >new >paste your path > ok 
 
 
+Here's a simplified step-by-step guide to installing JDK and setting the path on Windows:  
 
+---
+
+### **1. Download JDK**  
+1. Visit the [Oracle JDK Downloads page](https://www.oracle.com/java/technologies/downloads/#java23).  
+2. Look for the **x64 Installer** and download it.  
+
+---
+
+### **2. Install JDK**  
+1. Open the downloaded file and follow the installation wizard.  
+2. During installation, JDK will be installed in a default location:  
+   **`C:\Program Files\Java\jdk-<version>`**.  
+
+---
+
+### **3. Check Installation**  
+1. Open the **Command Prompt (CMD)** by searching for "cmd" in the Start menu.  
+2. Type the following command and press **Enter**:  
+   ```cmd
+   java -version
+   ```  
+3. If the installation was successful, you’ll see the installed Java version.  
+
+---
+
+### **4. If Java is Not Recognized**  
+If you get an error saying "Java is not recognized," you need to set the **Path** environment variable.  
+
+---
+
+### **5. Find the JDK Bin Path**  
+1. Go to the folder where JDK was installed:  
+   **`C:\Program Files\Java\jdk-<version>`**.  
+2. Open the `bin` folder. For example:  
+   **`C:\Program Files\Java\jdk-17\bin`**.  
+3. Copy the full path from the address bar.  
+
+---
+
+### **6. Set the Path Variable**  
+1. Right-click on **This PC** (or My Computer) and select **Properties**.  
+2. On the left side, click **Advanced System Settings**.  
+3. In the **System Properties** window, click the **Environment Variables** button.  
+
+---
+
+### **7. Edit the Path Variable**  
+1. Under **User Variables** (for your user account) or **System Variables** (for all users), look for the **Path** variable.  
+2. Select **Path** and click **Edit**.  
+3. In the Edit Environment Variable window:  
+   - Click **New**.  
+   - Paste the copied JDK `bin` path (e.g., `C:\Program Files\Java\jdk-17\bin`).  
+   - Click **OK**.  
+
+---
+
+### **8. Verify the Path**  
+1. Open the Command Prompt again and type:  
+   ```cmd
+   java -version
+   ```  
+2. You should now see the installed Java version displayed.
+
+---
+
+### **Why Set the Path?**  
+- Setting the Path allows the system to find Java commands (`java`, `javac`, etc.) from any directory.  
+- Without it, you’d need to navigate to the JDK `bin` folder every time to use Java commands.
+
+---
 
 
 
