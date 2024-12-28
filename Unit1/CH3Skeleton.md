@@ -86,6 +86,107 @@ println is its method. -  method of `PrintStream` used to print text to the cons
 
 
 
+# Practical
+
+Experiment :- 
+java.lang :- contains System class , automatically important 
+
+Experiment:- 
+Why we use same name for file and class.
+
+> javac FileName.java
+> java ClassName
+
+It will create 2 files 
+
+1. FileName.java
+2. ClassName.class
+
+same name is good.
+
+```java
+
+public class ClassName{}
+
+```
+> javac File.java
+>error:- class CLassName is public, should be declared in a filename ClassName.java
+
+
+Solution :- two problem occurs with different name 
+
+
+Experiment :- 
+
+```java
+class MyClass {
+   
+   public  static void main() {}}
+```
+
+> javac First.java
+> java First
+> Error:- Main method not found in class First. Please define main method as public static void main()
+> JVM recoganize same signature
+
+
+Must use same signature of main method.
+
+
+Experiment :- command line argument
+
+```java
+import java.lang.*;
+
+class MyClass{
+public static void main(String arg[]){
+System.out.println("Hello Abhinish");
+System.out.println(arg[0]);//this one
+}
+}
+```
+
+>$ java javaFirstProgram.java
+>Error: Could not find or load main class javaFirstProgram.java
+Caused by: java.lang.ClassNotFoundException: javaFirstProgram.java
+
+Exception error:- ArrayIndexOutOfBoundsException
+
+Experiment :- 
+>$ java javaFirstProgram.java abhinish
+>Hello Abhinish
+>abhinish
+
+Whatever we type in CMD this act as a argument for our file
+
+
+```java
+import java.lang.*;
+
+class MyClass{
+public static void main(String arg[]){
+System.out.println("Hello Abhinish");
+System.out.println(arg[0]);
+System.out.println(arg[1]);
+}
+}
+
+```
+>$ java javaFirstProgram.java abhinish kumar
+>Hello Abhinish
+>abhinish
+>kumar
+
+Sol:- What every argument we give along with the program name all are taken as Command line argument that is taken by program. 
+You can process the data given by CMD
+
+
+
+
+
+
+
+
 
 
 
