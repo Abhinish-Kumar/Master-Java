@@ -96,15 +96,39 @@ public class Main {
 
 
 
+# Practical
+
+System.in attach to keyboard/reference of keyboard
+System.out attach to monitor
 
 
+```java
+//must
+import java.util.Scanner;
+
+public class ReadKeyboard {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in); // Create a Scanner object for input
+        System.out.print("Enter an integer: ");
+        int x = sc.nextInt(); // Read an integer input
+        System.out.println("You entered: " + x); // Print the input
+    }
+}
+
+```
 
 
+Note:- if we not import the unit package 
+error> can not Find Symbol Scanner (this class is not visible or accessible to the compiler)
+
+Note:- if give different input 
+Exception> input mismatch exception
 
 
+### How to find the methods of any class like Scanner
 
-
-
+>javap java.util.Scanner
+>radix will read Binary
 
 
 
