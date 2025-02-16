@@ -128,7 +128,19 @@ Hexadecimal: 10
 Note :- you can use _ with numbers 
 
 
+If you have bigger Figure you can separate the digits with _.
 
+```java
+class Literal
+{
+public static void main(String arg[]){
+long l=999_999_999;
+float f=12_456.56f;
+System.out.println(f);
+System.out.println(l);
+}
+}
+```
 
 
 
